@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input id="a" type="number" placeholder="First number">
+<input id="b" type="number" placeholder="Second number">
+<button onclick="calc()">Calculate</button>
+
+<p id="res"></p>
+
+<script>
+function calc() {
+  let a = +document.getElementById("a").value;
+  let b = +document.getElementById("b").value;
+  document.getElementById("res").innerHTML = 
+    "Add: " + (a+b) + "<br>" +
+    "Sub: " + (a-b) + "<br>" +
+    "Mul: " + (a*b) + "<br>" +
+    "Div: " + (b !== 0 ? (a/b) : "Error");
+}
+</script>
+
+</body>
+</html>
